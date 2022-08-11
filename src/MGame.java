@@ -6,6 +6,7 @@ public class MGame {
     public void playGame(int N) {
         while (roundCat < N) {
             playRound();
+            roundCat++;
         }
     }
 

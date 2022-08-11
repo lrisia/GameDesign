@@ -5,8 +5,8 @@ public class Board {
     public Square getSquare(Square oldSquare, int fvTot) {
         int currentLocationIndex = 0;
         for (int i = 0; i < N; i++) {
-            if (oldSquare.equals(squares[N])) {
-                currentLocationIndex = N;
+            if (oldSquare.equals(squares[i])) {
+                currentLocationIndex = i;
             }
         }
         int newLocationIndex = currentLocationIndex + fvTot;
